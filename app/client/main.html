@@ -1,0 +1,14 @@
+<head>
+  <title>ES6Server</title>
+</head>
+
+<body ng-app="app">
+  <h1>Welcome to Meteor!</h1>
+
+  <div ng-controller="SampleController as vm">
+    <button ng-click="vm.callServerService()">Call server service</button>
+
+    <h2>Available server-side services with functions</h2>
+    <pre>{{vm.settings|json}}</pre>
+  </div>
+</body>
